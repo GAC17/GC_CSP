@@ -1,3 +1,4 @@
+# GC First Program python
 smart = input("Are you dumb?")
 
 print("...You're dumb for sure")
