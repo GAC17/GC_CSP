@@ -8,15 +8,15 @@ number2 = 250
 
 breakfast = "eggs and toast"
 
-color = ("Blue")
+color = "Blue"
 
-school = ("UCAS")
+school = "UCAS"
 
-year = ("2026")
+year = "2026"
 
-eye = ("hazel")
+eye = "hazel"
 
 age = 15
 
-subject = ("Health science")
+subject = "Health science"
 print(name, number, number2, breakfast, color, school, year, eye, age, subject)
