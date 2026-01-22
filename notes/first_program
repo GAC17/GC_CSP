@@ -1,0 +1,7 @@
+smart = input("Are you dumb?")
+
+print("...You're dumb for sure")
+
+smart = input ("argue with him.")
+
+print("...still dumb to be honest")
