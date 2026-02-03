@@ -4,8 +4,7 @@ if int(number) < 10:
      print(f"{number} is a single digit number")
 else:
      print("Your number is too big yo")
-
-"""name = input("What is your name:").strip().capitalize()
+name = input("What is your name:").strip().capitalize()
 boolean = True #false 
 if not name == "Gage" and not name == "trevor":
     print("I love your hair. How often do you you dye it?")
@@ -15,4 +14,4 @@ if not name == "Gage" and not name == "trevor":
     else:
         print("That is super cool, and expensiveMax")
 else:
-    print(f"Hello {name}!")"""
+    print(f"Hello {name}!")
