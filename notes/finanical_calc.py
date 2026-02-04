@@ -1,5 +1,7 @@
 # GC finanical calculator
 
+
+
 income = float (input("What is your monthly income?"))
 rent = float (input("What is your rent?"))
 util = float (input("What is your utility bill?"))
