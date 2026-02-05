@@ -5,7 +5,7 @@ def hello ():
 hello()
 
 def hello_user(name):
-    print(f"Hello {admin}")
+    print(f"Hello {name}")
 
 def area(length, width):
     return length * width 
