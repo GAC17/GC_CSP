@@ -1,4 +1,4 @@
-# GC 3prd larose
+"""# GC 3prd larose
 kingdom = "The Silent Kingdom"
 name = input("What's thy name: ").strip().capitalize()
 print(f"Hello {name}")
@@ -13,5 +13,18 @@ if homeless == "A":
     print("The homeless man tells people about your kindness, you obtain one kindness token ")
 elif homeless == "B":
     print("You gain one hate token.")
-print(f"You arrive at the {choice} tower.")
+print(f"You arrive at the {choice} tower.")"""
 #GC
+help = input('do you need help? If so type "Help". ').strip().capitalize()
+def controls(): 
+    print("To open your inventory type 'INV' to see the items you've obtained.")
+    print('To move around type "Forwards, Backwards, Left, Right". ')
+    print('To use an item, type the items name.')
+    print('If preseneted with a choice, type, "A" or "B".')
+    print('If forgetful, type "Help" to see the commands again.')
+if help == 'Help':
+  print("To open your inventory type 'INV' to see the items you've obtained.")
+print('To move around type "Forwards, Backwards, Left, Right". ')
+print('To use an item, type the items name.')
+print('If preseneted with a choice, type, "A" or "B".')
+print('If forgetful, type "Help" to see the commands again.')
