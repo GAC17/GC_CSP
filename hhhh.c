@@ -1,5 +1,6 @@
-// GC LaRose 3rd period
+// GC 3rd period
 #include <stdio.h>
+
 int main() {
     float income, rent, util, groceries, transport, savings,spend;
     printf("What's your monthly income: $");
@@ -21,5 +22,6 @@ int main() {
     printf("Groceries: %.1f%%\n", (groceries / income) * 100);
     printf("Transportation: %.1f%%\n", (transport / income) * 100);
     printf("Savings: %.1f%%\n", (savings / income) * 100);
+
     return 0;
 }
