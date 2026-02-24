@@ -1,5 +1,5 @@
 
-int main() {
+int notmain() {
     char name[50];
     printf("Whats your name? ");
     scanf("%s", name); 
