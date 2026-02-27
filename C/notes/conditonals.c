@@ -8,12 +8,6 @@ int main (){
     bool admin = 0;
     
     if (grade >= 90){
-        if(grade > 93){
-            printf("You have a %d percent. That is an A!\n", grade);
-        }else{
-            printf("You have a %d percent. That is an A-!\n", grade);
-        }
-
         printf("You have a %d percent. That is an A!\n", grade);
     }else if (grade >= 80){
         printf("You have a %d percent. That is a B!\n", grade);
