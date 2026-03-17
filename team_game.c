@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
+#include <time.h>
 int main (){
     char name [50];
     char yesorno [50];
@@ -13,25 +13,36 @@ int main (){
         if (yesorno == "yes"){
             printf("Welcome to tic tac toe\n");
         }else{
-            printf("You still must play");
+            printf("You still must play\n");
         };
 
-    char show_board(board_spot);
-    board1(" {board_spot[0]} | {board_spot[1]} | {board_spot[2]} \n");
-    board2(" {board_spot[3]} | {board_spot[4]} | {board_spot[5]} \n");
-    board3(" {board_spot[6]} | {board_spot[7]} | {board_spot[8]} \n");
-    complete_board(board1 + board2 + board3);
-    printf("%d", &complete_board);
-    return complete_board;
- 
+        char spt0 = '0';
+        char spt1 = '1';
+        char spt2 = '2';
+        char spt3 = '3';
+        char spt4 = '4';
+        char spt5 = '5';
+        char spt6 = '6';
+        char spt7 = '7';
+        char spt8 = '8';
+      
+      
+      
+      
+      
+        printf(" %c | %c | %c \n", spt0, spt1, spt2);
+        printf(" %c | %c | %c \n", spt3, spt4, spt5);
+        printf(" %c | %c | %c \n", spt6, spt7, spt8);
+      
+      int myNum;
+      printf("Select a board spot 0-8:\n");
+     scanf("%d", &myNum);
+     printf("Your number is %d", myNum);
 
-
-
-
-
-
-///char board [9] = {'0', '1', '2', '3', '4', '5', '6', '7', '8'};
-
+    
+      
+    
+      
 
 
 
