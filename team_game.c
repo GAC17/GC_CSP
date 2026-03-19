@@ -16,22 +16,18 @@ int main (){
             printf("You still must play\n");
         };
     
-      
-       char spts[9] = {'0','1','2','3','4','5','6','7','8'};
-      
-      
+   
 
+    while (true){
+          char spts[9] = {'0','1','2','3','4','5','6','7','8'};
 
-       
         printf(" %c | %c | %c \n", spts[0], spts[1], spts[2]);
         printf(" %c | %c | %c \n", spts[3], spts[4], spts[5]);
         printf(" %c | %c | %c \n", spts[6], spts[7], spts[8]);
-      
-
-
-
-        while (true ){
-                 int myNum;
+   
+   
+   
+        int myNum;
       printf("Select a board spot 0-8:\n");
      scanf("%d", &myNum);
 
@@ -69,60 +65,86 @@ int main (){
      }
  if(myNum == 8){
     spts[8] = 'X';
+
+
+
+    srand(time(NULL));
+ 
+int bot= rand() %9; //bot turn here
+  if(bot == 0){
+    spts[0] = 'O';
         
      }
+     if(bot == 1){
+    spts[1] = 'O';
+        
+     }
+ if(bot == 2){
+    spts[2] = 'O';
+        
+     }
+ if(bot == 3){
+    spts[3] = 'O';
+        
+     }
+ if(bot == 4){
+    spts[4] = 'O';
+        
+     }
+ if(bot == 5){
+    spts[5] = 'O';
+        
+     }
+ if(bot == 6){
+    spts[6] = 'O';
+        
+     }
+ if(bot == 7){
+    spts[7] = 'O';
+        
+     }
+ if(bot == 8){
+    spts[8] = 'O';
+    
         printf(" %c | %c | %c \n", spts[0], spts[1], spts[2]);
         printf(" %c | %c | %c \n", spts[3], spts[4], spts[5]);
         printf(" %c | %c | %c \n", spts[6], spts[7], spts[8]);
-        }
-
-     //    int grades[] = { 74, 88, 95, 97, 87};
-    //printf("%d\n", grades [2])
-    return 0;
 }
+        printf(" %c | %c | %c \n", spts[0], spts[1], spts[2]);
+        printf(" %c | %c | %c \n", spts[3], spts[4], spts[5]);
+        printf(" %c | %c | %c \n", spts[6], spts[7], spts[8]);
 
-
-def win (board_spot);
-    if spts[0]==spts[1]==spts[2]{
+          /*char* win = spts;
+    if (spts[0]==spts[1]==spts[2]){
         printf("You win!");
         break;
-    }else if
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    return True
-    elif board_spot[3]==board_spot[4]==board_spot[5]:
-        printf("You Win!")
-        return True
-    elif board_spot[6]==board_spot[7]==board_spot[8]:
-        print("You Win!")
-        return True
-   
-    elif board_spot[0]==board_spot[4]==board_spot[8]:
-        print("You Win!")
-        return True
-    elif board_spot[6]==board_spot[4]==board_spot[2]:
-        print("You Win!")
-        return True
-    elif board_spot[6]==board_spot[7]==board_spot[8]:
-        print("You Win!")
-        return True
-   
-    elif board_spot[0]==board_spot[3]==board_spot[6]:
-        print("You Win!")
-        return True
-    elif board_spot[1]==board_spot[4]==board_spot[7]:
-        print("You Win!")
-        return True
-    elif board_spot[2]==board_spot[5]==board_spot[8]:
-        print("You Win!")
-        return True
+    }eif(spts[3]==spts[4]==spts[5]){
+        printf("You Win!");
+        break;
+    } else if(spts[6]==spts[7]==spts[8]){
+        printf("You Win!");
+        break;
+    }else if(spts[0]==spts[4]==spts[8]){
+        printf("You Win!");
+        break;
+    }else if(spts[6]==spts[4]==spts[2]){
+        printf("You Win!");
+        break;
+    }else if(spts[6]==spts[7]==spts[8]){
+        printf("You win!");
+        break;
+    }else if( spts[0]==spts[3]==spts[6]){
+        printf("You win!");
+        break;
+    }else if(spts[1]==spts[4]==spts[7]){
+        printf("You win!");
+        break;
+    }else if(spts[2]==spts[5]==spts[8]){
+        printf("You win!");
+        break;
+        */
+    }
+       
+}
+    return 0;
+  }
