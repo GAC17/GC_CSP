@@ -3,20 +3,50 @@
     <head>
         <title>Advanced Notes on HTML</title>
         <meta charset = "UTF-8">
+        <!-- embeded CSS goes inside of the head tags, using the <style> tag-->
+            <style>
+                *{
+                    background-color: rgb(156, 69, 37);
+                }
+                p{
+                    background-color: burlywood;
+                    color:rgba(15, 105, 15, 0.589);
+                    text-align: right;
+                    font-size: 1em; 
+
+                }
+                #ordered-list{
+                    background-color: crimson;
+                    color: green;
+                }
+                .odd{
+                    background-color: green;
+                    color: tan;
+                }
+                h1{
+                    text-align: center;
+                    color: #e6e6ff;
+                    border: 2px solid red ;
+                }
+                img{
+                    width: 50%;
+                }
+            </style>
     </head>
     <body>
         <h1>HTML Advanced Notes</h1>
+        <!--Inline styles are done in the HTML opening tag. This is bad practice to use!-->
 <div height="200px" width ="200px" style="background-color: darkgreen;">
             <p>Div conent</p>
 </div>
-<div id ="ordered list">
+<div id ="ordered-list">
         <p>This is how you make an  ordered list(numbered)</p>
         <ol>
-            <li>Geogrphay</li>
+            <li class="odd">Geogrphay</li>
             <li>Math</li>
-            <li>Computer science principles</li>
+            <li class="odd">Computer science principles</li>
             <li>Lunch</li>
-            <li>Advisory</li>
+            <li class="odd">Advisory</li>
             <li>English</li>
         </ol>
 </div>
