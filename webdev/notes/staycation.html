@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jim+Nightshade&display=swap" rel="stylesheet">
+    <head>
+        <title>The best experince to have in Utah</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color: bisque;
+            }
+            h1{
+                text-align: center;
+                font-family: "Google Sans Flex", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-style: normal;
+                font-variation-settings:
+                "slnt" 0,
+                "wdth" 100,
+                "GRAD" 0,
+                "ROND" 0;
+            }
+            #pgone{
+                font-size: x-large;
+                text-align: left;
+
+            }
+            img{
+                height: 50%; width: 50%;
+                padding: 3px;
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                
+            }
+        </style>
+        <script>
+             function show_list(){
+                     if(document.getElementById("list").style.display == "block"){
+                       document.getElementById("button").innerHTML = "Show List"
+                       document.getElementById("list").style.display = "none"
+                }else{
+                    document.getElementById("list").style.display = "block"
+                    document.getElementById("button").innerHTML = "Hide List"
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Lake Powell</h1>
+<div id="pgone">
+        <p> Lake powell is a large lake, is spans acorss southern utah, into Arizona. It has sadly lost about 100ft of depth, it is still a huge deep body of water, perfect for fishing, tubing, and other water based recreational activited. The deepest point of lake powell is over 400 feet, before the large drought, and the selling of lake water, its depth was once over 500 ft. Depsite the water loss, it is still a hot spot for Utah. </p>
+</div>
+        <button onclick="show_list()" onmouseover="hover('button')" Id="button"
+        onmouseout="leave('button')"> Show List </button>
+<div id="list">
+        <ul  style = "list-style-type:disc">
+            <li><a href="https://www.tripadvisor.com/Hotels-g60911-Lake_Powell_Utah-Hotels.html"  target="_blank">Tripadvisor's reccomendations</a></li>
+            <li><a href="https://www.expedia.com/Lake-Powell-Hotels.0-l6056335-0.Travel-Guide-Filter-Hotels"  target="_blank">Expedia's reccomendations</a></li>
+            <li><a href="https://www.lakepowell.com/lodging/lake-powell-lodging-experience"  target="_blank">Lake Powell's  reccomendations</a></li>
+            <li><a href="https://www.mrandmrssmith.com/destinations/utah/lake-powell"  target="_blank">Upper class reccomendations</a></li>
+            <li><a href="https://www.utah.com/destinations/recreation-areas/lake-powell/places-to-stay/"  target="_blank">Utah's reccomendations</a></li>
+        </ul>
+</div>
+        <img src="https://media.cntraveler.com/photos/58d91937bf12f06bcf42e632/16:9/w_2560%2Cc_limit/GettyImages-480857752.jpg" alt="Lake Powell under the Utah summer sunset">
+        <img src="https://blog-assets.thedyrt.com/uploads/2020/02/shutterstock_517023865-1.jpg" alt="Lake Powell from a diffrent prespective, facing the Utah sunset">
+    </body>
+</html>
