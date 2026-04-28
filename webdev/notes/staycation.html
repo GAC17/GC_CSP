@@ -9,6 +9,7 @@
         <style>
             body{
                 background-color: bisque;
+                color: blue;
             }
             h1{
                 text-align: center;
@@ -22,18 +23,20 @@
                 "GRAD" 0,
                 "ROND" 0;
             }
-            #pgone{
+            p{
                 font-size: x-large;
                 text-align: left;
 
             }
             img{
-                height: 50%; width: 50%;
-                padding: 3px;
+                height: 25%; width: 25%;
+                margin-left: 50px; margin-right: 50px;
                 display: grid;
-                grid-template-columns: 1fr 1fr ;
+                grid-template-columns: 50% 50%;
+                border: 5px solid black;
                 
             }
+
         </style>
         <script>
              function show_list(){
@@ -42,18 +45,23 @@
                        document.getElementById("list").style.display = "none"
                 }else{
                     document.getElementById("list").style.display = "block"
-                    document.getElementById("button").innerHTML = "Hide List"
+                    document.getElementById("button").innerHTML = "Hide List Confirm"
             }
         }
+        
+         function show_image(){
+                document.getElementById("hover").src = "https://npr.brightspotcdn.com/dims4/default/1b253ff/2147483647/strip/true/crop/555x450+0+0/resize/880x714!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fknau%2Ffiles%2F201305%2FENPhotoGCDam3.jpg"
+            }
         </script>
     </head>
     <body>
         <h1>Lake Powell</h1>
 <div id="pgone">
-        <p> Lake powell is a large lake, is spans acorss southern utah, into Arizona. It has sadly lost about 100ft of depth, it is still a huge deep body of water, perfect for fishing, tubing, and other water based recreational activited. The deepest point of lake powell is over 400 feet, before the large drought, and the selling of lake water, its depth was once over 500 ft. Depsite the water loss, it is still a hot spot for Utah. </p>
+        <p> Lake powell is a large lake, it spans acorss southern utah, into Arizona. It has sadly lost about 100ft of depth, it is still a huge deep body of water, perfect for fishing, tubing, and other water based recreational activited. The deepest point of lake powell is over 400 feet, before the large drought, and the selling of lake water, its depth was once over 500 ft. Depsite the water loss, it is still a hot spot for Utah. </p>
 </div>
         <button onclick="show_list()" onmouseover="hover('button')" Id="button"
-        onmouseout="leave('button')"> Show List </button>
+        onmouseout="leave('button')"> Hide List </button>
+<br>
 <div id="list">
         <ul  style = "list-style-type:disc">
             <li><a href="https://www.tripadvisor.com/Hotels-g60911-Lake_Powell_Utah-Hotels.html"  target="_blank">Tripadvisor's reccomendations</a></li>
@@ -65,5 +73,19 @@
 </div>
         <img src="https://media.cntraveler.com/photos/58d91937bf12f06bcf42e632/16:9/w_2560%2Cc_limit/GettyImages-480857752.jpg" alt="Lake Powell under the Utah summer sunset">
         <img src="https://blog-assets.thedyrt.com/uploads/2020/02/shutterstock_517023865-1.jpg" alt="Lake Powell from a diffrent prespective, facing the Utah sunset">
+<br>
+    <h1>There is more than meets to eye with this peculiar lake</h1>
+    <p>Lake Powell is a great fishing spot, the fish inside the lake are plentiful, if you're doing it right, you won't leave without catching atleast one fish. Most of the time you will be catching Stripped Bass, which is a hybrid fish that can also live in salt-water enviorments. There is a lot of fun to be had with fishing, but dock fishing in some areas is a no go, so be sneaky, or rent a boat. If you're worried about areas being overfished, or overan with the crowds, Lake Powell is over 180 miles long, or over 160,000 acres. With a boat, you can travel miles without seeing a single person, and catching great fish.</p>
+    <ul style="list-style-type: circle;">
+        <li>Small Mouth Bass</li>
+        <li>Large Mouth Bass</li>
+        <li> Stripped Bass</li>
+        <li> Walleye</li>
+        <li>Catfish</li>
+        <li>Common Carp</li>
+    </ul>
+<div id="imghover">
+     <img id="hover" onmouseover="show_image()" src="https://antelopepointlakepowell.com/wp-content/uploads/2023/01/charterandfishing.jpg" alt="A beautiful view of the lake">
+</div>" 
     </body>
 </html>
