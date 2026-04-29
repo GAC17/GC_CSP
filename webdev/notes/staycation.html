@@ -28,13 +28,16 @@
                 text-align: left;
 
             }
-            img{
+            #imguse{
+                display: flex;
+                margin: 10px;
+                padding: 3px;  
+            }
+            #im{
+                height: 25%; width: 35%;
+            }
+            #hover{
                 height: 25%; width: 25%;
-                margin-left: 50px; margin-right: 50px;
-                display: grid;
-                grid-template-columns: 50% 50%;
-                border: 5px solid black;
-                
             }
 
         </style>
@@ -50,7 +53,7 @@
         }
         
          function show_image(){
-                document.getElementById("hover").src = "https://npr.brightspotcdn.com/dims4/default/1b253ff/2147483647/strip/true/crop/555x450+0+0/resize/880x714!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fknau%2Ffiles%2F201305%2FENPhotoGCDam3.jpg"
+                document.getElementById("hover").src = "https://norrik.com/wp-content/uploads/2025/04/lake-powell-small-mouth-bass.jpg"
             }
         </script>
     </head>
@@ -71,8 +74,11 @@
             <li><a href="https://www.utah.com/destinations/recreation-areas/lake-powell/places-to-stay/"  target="_blank">Utah's reccomendations</a></li>
         </ul>
 </div>
-        <img src="https://media.cntraveler.com/photos/58d91937bf12f06bcf42e632/16:9/w_2560%2Cc_limit/GettyImages-480857752.jpg" alt="Lake Powell under the Utah summer sunset">
-        <img src="https://blog-assets.thedyrt.com/uploads/2020/02/shutterstock_517023865-1.jpg" alt="Lake Powell from a diffrent prespective, facing the Utah sunset">
+<div id="imguse">  
+        <img  id="im" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1NrNpe.img?w=1920&h=1080&m=4&q=93" alt="Lake Powell under the Utah summer sunset">
+        <img  id="im"src="https://tse4.mm.bing.net/th/id/OIP.5paUGNYyMmhJnATrWd2LIAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Lake Powell from a diffrent prespective, facing the Utah sunset">
+        <img id="im" src="https://wallpaperswide.com/download/lake_powell_arizona-wallpaper-1920x1080.jpg" alt="Wide angel view of the lake">
+</div>   
 <br>
     <h1>There is more than meets to eye with this peculiar lake</h1>
     <p>Lake Powell is a great fishing spot, the fish inside the lake are plentiful, if you're doing it right, you won't leave without catching atleast one fish. Most of the time you will be catching Stripped Bass, which is a hybrid fish that can also live in salt-water enviorments. There is a lot of fun to be had with fishing, but dock fishing in some areas is a no go, so be sneaky, or rent a boat. If you're worried about areas being overfished, or overan with the crowds, Lake Powell is over 180 miles long, or over 160,000 acres. With a boat, you can travel miles without seeing a single person, and catching great fish.</p>
@@ -85,7 +91,7 @@
         <li>Common Carp</li>
     </ul>
 <div id="imghover">
-     <img id="hover" onmouseover="show_image()" src="https://antelopepointlakepowell.com/wp-content/uploads/2023/01/charterandfishing.jpg" alt="A beautiful view of the lake">
+     <img id="hover" onmouseover="show_image()" src="https://tse3.mm.bing.net/th/id/OIP.k6kIZkbyr1JCgmu9Osbk7gHaE8?r=0&pid=ImgDet&w=474&h=316&rs=1&o=7&rm=3" alt="A beautiful view of the lake">
 </div>" 
     </body>
 </html>
